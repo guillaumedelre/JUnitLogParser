@@ -60,7 +60,7 @@ class Parser implements IParser
     {
         $doc = new Document();
         $doc->loadXML($str);
-        if (!$this->checkValid($doc->getDocument()) && !$graceful) {
+        if (false === @$this->checkValid($doc->getDocument()) && false === $graceful) {
             throw new \DOMException('Cannot parse non-JUnit log format XML');
         }
         $this->doc = $doc;
