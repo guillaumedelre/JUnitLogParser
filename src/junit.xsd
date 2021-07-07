@@ -29,6 +29,7 @@
             </xs:choice>
             <xs:attributeGroup ref="Main"/>
             <xs:attribute name="tests" type="xs:integer" use="required"/>
+            <xs:attribute name="warnings" type="xs:integer"/>
             <xs:attribute name="errors" type="xs:integer" use="required"/>
             <xs:attribute name="failures" type="xs:integer" use="required"/>
             <xs:attribute name="skipped" type="xs:integer"/>
